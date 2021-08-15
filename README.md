@@ -1,24 +1,24 @@
-# README
+# Events Manager - Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby on Rails backend API for managing events
 
-Things you may want to cover:
+### Built using
 
-* Ruby version
+* postgreSQL 
+* redis
+* jwt_sessions
 
-* System dependencies
 
-* Configuration
+### Features
 
-* Database creation
+* Session management and authentication
 
-* Database initialization
+## Setup
 
-* How to run the test suite
+``` bash
+# Remember to update CORS config to allow frontend to connect
 
-* Services (job queues, cache servers, search engines, etc.)
+# start server at localhost:3000
+rails s
 
-* Deployment instructions
-
-* ...
+```
