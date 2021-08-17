@@ -13,7 +13,7 @@ module Api
 
       # GET /date
       def date
-        @events = current_user.events.where(:startTime => params[:date].to_date..params[:date].to_date+1 ).order(:startTime)
+        @events = current_user.events.where(:startTime=> params[:date].to_date+params[:offset].to_i.minute..params[:date].to_date+1+params[:offset].to_i.minute ).order(:startTime)
         render json: @events
       end
 

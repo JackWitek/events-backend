@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :dateranges
       resources :events
-      get '/events/dates/:date', to: 'events#date'
+      get '/events/dates/:date/:offset', to: 'events#date'
     end
   end
 
